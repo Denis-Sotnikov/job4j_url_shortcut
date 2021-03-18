@@ -20,7 +20,7 @@ curl --location --request POST 'http://localhost:8080/shortcuts/registration' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "site": "vk.com"
-}'<br>
+}'<br><br>
 ![ScreenShot](img/registration.png)
 <br><br>
 Получаем токен
@@ -30,7 +30,7 @@ curl --location --request POST 'http://localhost:8080/login' \
 --data-raw '{
     "login": "your_login",
     "password": "your_password"
-}'<br>
+}'<br><br>
 ![ScreenShot](img/get token.png)
 <br><br>
 
@@ -40,14 +40,14 @@ curl --location --request POST 'http://localhost:8080/shortcuts/convert' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "address": "https://vk.com/salsaplus"
-}'<br>
+}'<br><br>
   ![ScreenShot](img/convert.png)
   <br><br>
 
 Получаем статистику
 curl --location --request GET 'http://localhost:8080/shortcuts/statistic' \
 --header 'Authorization: Bearer your_token\
-<br>
+<br><br>
   ![ScreenShot](img/statistic.png)
   <br><br>
 
