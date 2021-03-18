@@ -20,8 +20,10 @@ curl --location --request POST 'http://localhost:8080/shortcuts/registration' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "site": "vk.com"
-}'<br>
+}'
+<br>
 ![ScreenShot](img/registration.png)
+
 <br>
 Получаем токен
 curl --location --request POST 'http://localhost:8080/login' \
