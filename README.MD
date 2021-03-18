@@ -47,7 +47,7 @@ curl --location --request POST 'http://localhost:8080/shortcuts/convert' \
 Получаем статистику
 curl --location --request GET 'http://localhost:8080/shortcuts/statistic' \
 --header 'Authorization: Bearer your_token\
-<br><br>
+<br>
   ![ScreenShot](img/statistic.png)
   <br><br>
 
