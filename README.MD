@@ -14,8 +14,9 @@ PostgreSQL
 Liquibase
 <br>
 
-Используем REST API
-Регистрируем сайт
+Используем REST API<br>
+
+Регистрируем сайт<br>
 curl --location --request POST 'http://localhost:8080/shortcuts/registration' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -25,7 +26,7 @@ curl --location --request POST 'http://localhost:8080/shortcuts/registration' \
 
 ![ScreenShot](img/registration.png)
 
-Получаем токен
+Получаем токен<br>
 curl --location --request POST 'http://localhost:8080/login' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
@@ -37,7 +38,7 @@ curl --location --request POST 'http://localhost:8080/login' \
 ![ScreenShot](img/get token.png)
 <br>
 
-Конвертируем ссылку
+Конвертируем ссылку<br>
 curl --location --request POST 'http://localhost:8080/shortcuts/convert' \
 --header 'Authorization: Bearer your_token\
 --header 'Content-Type: application/json' \
@@ -48,7 +49,7 @@ curl --location --request POST 'http://localhost:8080/shortcuts/convert' \
   ![ScreenShot](img/convert.png)
   <br>
 
-Получаем статистику
+Получаем статистику<br>
 curl --location --request GET 'http://localhost:8080/shortcuts/statistic' \
 --header 'Authorization: Bearer your_token\
 
